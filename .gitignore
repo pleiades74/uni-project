@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+!*.ipynb  # Wait, we want notebooks? Let's keep them
+
+# Virtual Environment
+venv/
+env/
+myenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+models/checkpoints/
+models/weights/
+data/raw/
+data/processed/
+outputs/
+wandb/
+logs/
+
+# Large files
+*.pth
+*.pt
+*.h5
+*.onnx
+*.bin
+*.zip
+*.tar
+*.gz
+
+# Kaggle
+kaggle.json
+.kaggle/
+
+# Environment variables
+.env
+*.env
+
+# macOS
+.DS_Store
