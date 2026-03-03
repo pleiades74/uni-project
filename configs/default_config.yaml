@@ -1,0 +1,37 @@
+# Default configuration for Few-Shot OES Detector
+
+model:
+  clip_model: "ViT-B/32"
+  detector_backbone: "resnet50"
+  sam_model: "vit_h"
+  
+opm:
+  learning_rate: 0.0001
+  num_iterations: 100
+  batch_size: 4
+  num_shots: 5
+  use_text: true
+  freeze_backbone: true
+  momentum: 0.9
+  weight_decay: 0.0001
+  
+moc:
+  confidence_threshold: 0.5
+  nms_threshold: 0.5
+  max_detections: 100
+  
+data:
+  image_size: [512, 640]  # height, width
+  preprocessing:
+    clahe_clip_limit: 2.0
+    denoise_strength: 10
+    normalize: true
+    
+evaluation:
+  iou_threshold: 0.5
+  metrics: ["f1", "map", "precision", "recall"]
+  
+output:
+  save_detections: true
+  save_visualizations: true
+  log_wandb: false
