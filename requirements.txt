@@ -1,0 +1,25 @@
+ (Kaggle-compatible)
+txt
+# Core ML - Kaggle has these pre-installed but we specify versions
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+
+# These need to be installed on Kaggle
+opencv-python-headless>=4.8.0  # headless for Kaggle
+pillow>=10.0.0
+numpy>=1.24.0
+scikit-image>=0.21.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pyyaml>=6.0
+pandas>=2.0.0
+
+# For CLIP and SAM (special installs)
+git+https://github.com/openai/CLIP.git
+git+https://github.com/facebookresearch/segment-anything.git
+
+# Experiment tracking
+wandb>=0.15.0
